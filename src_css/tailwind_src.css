@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  h4 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    font-family:
+		system-ui,
+		-apple-system, /* Firefox supports this but not yet `system-ui` */
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+  }
+}
+
+@layer components{
+  .bg-social-icon{
+    background: linear-gradient(
+      45deg,
+      rgba(83, 48, 240, 0.2),
+      rgba(11, 148, 153, 0.281)
+    );
+    transition: all 0.5s;
+  }
+  .leading-sidebar-nav{
+    line-height: 70px !important;
+    height: 70px;
+  }
+}
+
+@layer utilities {
+  .mx-3px{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .left-10-percent {
+    left: 10%;
+  }
+  .w-20-percent {
+    width: 20%;
+    max-width: 80vw;
+  }
+  .w-profile-img-lg{
+    width: 140px;
+  }
+  .h-profile-img-lg{
+    height: 140px;
+  }
+  .w-profile-img-sm{
+    height: 120px;
+  }
+  .h-profile-img-sm{
+    height: 120px;
+  }
+  .text-profile-name{
+    font-size: 26px;
+  }
+  .text-profession{
+    font-size: 13.5px
+  }
+ .burgerpng{
+   /* @apply absolute to */
+ }
+ .burgerpng .line1,.line2,.line3{
+   @apply bg-white w-7 h-1 my-1;
+   transition: all 0.5s ease;
+ }
+ .hamburger-btn-close .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger-btn-close .line2 {
+    width: 0px;
+  }
+  .hamburger-btn-close .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .bg-social-icon:hover{
+    background: rgb(123, 52, 255);
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .sideMenu::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge add Firefox */
+  .sideMenu{
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    scrollbar-width: none; /* Firefox */
+  }
+  .copyright-text{
+    border-top: 0.5px solid @apply bg-gray-500;
+  }
+  
+}
+
+
