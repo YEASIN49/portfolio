@@ -83,6 +83,7 @@
   }
   .hamburger-btn-close .line2 {
     width: 0px;
+    transition: 0.5s ease;
   }
   .hamburger-btn-close .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
@@ -99,6 +100,14 @@
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none; /* Firefox */
+    transform: translateX(-120vw);
+    transition: 0.5s ease-in;
+  }
+  .w-sm-sideMenu{
+    max-width: 280px;
+  }
+  .toggle-hidable-sideMenu{
+    transform: translateX(0);
   }
   .copyright-text{
     border-top: 0.5px solid @apply bg-gray-500;
