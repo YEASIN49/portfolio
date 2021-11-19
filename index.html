@@ -9,6 +9,8 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="./output_css/tailwind.css" />
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
@@ -16,24 +18,21 @@
     <title>MD.YEASIN ALI</title>
   </head>
   <body>
-    <div id="pageWrapper" class="w-screen h-screen bg-parallex-img">
-      <!-- <div id="responsive-nav" class="inline-block  bg-red-200"> -->
-        <!-- <i class="fa fa-bars w-10 h-10 bg-red-700" id="menu-toggle"></i> -->
-        <div class="burperpng-container absolute z-50 top-0  h-12 w-16 flex flex-col justify-center items-center">
-          <div class="burgerpng">
-            <!-- <span class="burgerpng"> -->
-            <!-- <i id="hamburger" class="fas fa-bars"></i> -->
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-            <!-- </span> -->
-          </div>
+    <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed">
+      <div class="burperpng-container absolute z-50 top-0  h-12 w-16 flex flex-col justify-center items-center">
+        <div class="burgerpng md:hidden">
+          <!-- <span class="burgerpng"> -->
+          <!-- <i id="hamburger" class="fas fa-bars"></i> -->
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+          <!-- </span> -->
         </div>
+      </div>
          
-        
-        <div id="menu" class="sideMenu overflow-y-auto w-5/6 w-sm-sideMenu bg-gray-900 h-screen outline-none">
-          <!-- <i class="fa fa-times" id="menu-close"></i> -->
-          <div class="container text-center w-full">
+      <div id="menu" class="sideMenu mr-0 overflow-y-auto w-5/6 w-sm-sideMenu bg-gray-900 h-screen outline-none fixed z-40 md:sideMenu-shadow md:w-3/12 md:max-w-250px lg:left-5-percent 2xl:max-w-sm">
+        <div class="container text-center w-full">
+          <div>
             <div class="image pt-14">
               <a href="#"
                 ><img class="mx-auto mt-10 w-profile-img-sm h-profile-img-sm rounded-full md:w-profile-img-lg md:h-profile-img-lg " src="./images/profile-image.jpg" alt=""
@@ -44,38 +43,59 @@
               <span class="italic text-profession">Web Developer</span>
               <div class="social-network mt-2">
                 <ul class="soial-icons">
-                  <li class="inline-block hover:social-icon-hover">
-                    <a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a>
-                  </li>
-                  <li class="inline-block">
-                    <a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-linkedin-in"></i></a>
-                  </li>
-                  <li class="inline-block">
-                    <a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-base fab fa-github "></i></a>
-                  </li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-linkedin-in"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-base fab fa-github "></i></a></li>
                 </ul>
               </div>
             </div>
-            <nav class="main-nav mb-8" role="navigation">
-              <ul class="main-menu">
-                <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section1">About Me</a></li>
-
-                <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section3">My Work</a></li>
-
-                <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900" href="#section2">What I’m good at</a></li>
-
-                <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-b-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section4">Contact Me</a></li>
-
-              </ul>
-            </nav>
-
-            <div class="copyright-text pb-6">
-              <p class="text-sm pt-5 italic">Copyright 2021 </p>
-            </div>
+          </div>
+          <nav class="main-nav mb-8" role="navigation">
+            <ul class="main-menu">
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section1">About Me</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section3">My Work</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900" href="#section2">What I’m good at</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-b-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section4">Contact Me</a></li>
+            </ul>
+          </nav>
+          <div class="copyright-text pb-6">
+            <p class="text-sm pt-5 italic">Copyright 2021 </p>
           </div>
         </div>
-      <!-- </div> -->
-      <!--  -->
+      </div>
+      <section class="section my-work md:left-30-percent  md:relative md:w-8/12">
+        <div class="section-header relative">
+          <h2 class="section-title">My Projects</h2>
+        </div>  
+        <div class="search-filter-container my-5">
+          <button class="search-filter-option bg-search-filter-option active-filter" >All</button>
+          <button class="search-filter-option bg-search-filter-option">Full Stack</button>
+          <button class="search-filter-option bg-search-filter-option">Frontend</button>
+        </div>
+        <div class="section-underline"></div>
+        <div class="project-wrapper w-full bg-red-800 mx-auto flex flex-col md:flex-wrap">
+          <div class="project-card w-30-percent mx-1">
+            <img class="block " src="images/t1.jpg" alt="">
+            <div class="project-detail">
+              <h3 class="font-lato font-bold font-22px">Test Title</h3>
+              <p>Test Title is an online job platform</p>
+              <p><i class="fas fa-asterisk">test</i><i class="far fa-bookmark">Test 2</i><i class="fas fa-tags">test 3</i></p>
+            </div>
+          </div>
+          <div class="project-card w-30-percent mx-1">
+            <img class="block " src="images/t1.jpg" alt="">
+          </div>
+          <div class="project-card w-30-percent mx-1">
+            <img class="block " src="images/t1.jpg" alt="">
+          </div>
+          <div class="project-card w-30-percent mx-1">
+            <img class="block " src="images/t1.jpg" alt="">
+          </div>
+          <div class="project-card w-30-percent mx-1">
+            <img class="block " src="images/t1.jpg" alt="">
+          </div>
+        </div>
+      </section>
     </div>
     <script src="index.js"></script>
   </body>
