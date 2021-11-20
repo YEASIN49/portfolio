@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'parallex-img': "url('../images/parallex-bg.jpg')",
-       }
+        'parallex-img': "url('../images/parallex-bg-3.jpg')",
+      }
     },
   },
   variants: {

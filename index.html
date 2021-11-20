@@ -18,7 +18,7 @@
     <title>MD.YEASIN ALI</title>
   </head>
   <body>
-    <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed">
+    <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed overflow-y-auto">
       <div class="burperpng-container absolute z-50 top-0  h-12 w-16 flex flex-col justify-center items-center">
         <div class="burgerpng md:hidden">
           <!-- <span class="burgerpng"> -->
@@ -30,7 +30,7 @@
         </div>
       </div>
          
-      <div id="menu" class="sideMenu mr-0 overflow-y-auto w-5/6 w-sm-sideMenu bg-gray-900 h-screen outline-none fixed z-40 md:sideMenu-shadow md:w-3/12 md:max-w-250px lg:left-5-percent 2xl:max-w-sm">
+      <div id="menu" class="sideMenu mr-0 overflow-y-auto w-5/6 w-sm-sideMenu bg-gray-900 h-screen outline-none fixed z-40 md:bg-transparent md:sideMenu-shadow md:w-3/12 md:min-w-210px md:max-w-250px lg:left-5-percent 2xl:max-w-xs">
         <div class="container text-center w-full">
           <div>
             <div class="image pt-14">
@@ -73,26 +73,51 @@
           <button class="search-filter-option bg-search-filter-option">Frontend</button>
         </div>
         <div class="section-underline"></div>
-        <div class="project-wrapper w-full bg-red-800 mx-auto flex flex-col md:flex-wrap">
-          <div class="project-card w-30-percent mx-1">
-            <img class="block " src="images/t1.jpg" alt="">
-            <div class="project-detail">
-              <h3 class="font-lato font-bold font-22px">Test Title</h3>
-              <p>Test Title is an online job platform</p>
-              <p><i class="fas fa-asterisk">test</i><i class="far fa-bookmark">Test 2</i><i class="fas fa-tags">test 3</i></p>
+        <div class="project-wrapper w-full  mx-auto flex flex-col flex-wrap justify-between csm:flex-row md:flex-wrap lg:justify-start">
+          <div class="project-card bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-40-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+            <div class="project-detail px-2 h-40 mt-2 mb-4">
+              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
+              <p class="font-lato text-profession letter-spacing-0.5px mb-4">Test Title is an online job platform</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-3 py-2 rounded-full">Full Stack</span></p>
             </div>
           </div>
-          <div class="project-card w-30-percent mx-1">
-            <img class="block " src="images/t1.jpg" alt="">
+          <div class="project-card bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-40-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+            <div class="project-detail px-2 h-40 mt-2 mb-4">
+              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
+              <p class="font-lato text-profession letter-spacing-0.5px mb-4">Test Title is an online job platform</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-3 py-2 rounded-full">Full Stack</span></p>
+            </div>
           </div>
-          <div class="project-card w-30-percent mx-1">
-            <img class="block " src="images/t1.jpg" alt="">
+          <div class="project-card bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-40-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+            <div class="project-detail px-2 h-40 mt-2 mb-4">
+              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
+              <p class="font-lato text-profession letter-spacing-0.5px mb-4">Test Title is an online job platform</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-3 py-2 rounded-full">Full Stack</span></p>
+            </div>
           </div>
-          <div class="project-card w-30-percent mx-1">
-            <img class="block " src="images/t1.jpg" alt="">
+          <div class="project-card bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-40-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+            <div class="project-detail px-2 h-40 mt-2 mb-4">
+              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
+              <p class="font-lato text-profession letter-spacing-0.5px mb-4">Test Title is an online job platform</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-3 py-2 rounded-full">Full Stack</span></p>
+            </div>
           </div>
-          <div class="project-card w-30-percent mx-1">
-            <img class="block " src="images/t1.jpg" alt="">
+          <div class="project-card bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-40-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+            <div class="project-detail px-2 h-40 mt-2 mb-4">
+              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
+              <p class="font-lato text-profession letter-spacing-0.5px mb-4">Test Title is an online job platform</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-3 py-2 rounded-full">Full Stack</span></p>
+            </div>
           </div>
         </div>
       </section>
