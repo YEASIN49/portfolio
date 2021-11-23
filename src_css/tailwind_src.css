@@ -49,11 +49,14 @@
   
     background: linear-gradient(
       45deg,
-      rgba(83, 48, 240, 0.2),
-      rgba(11, 148, 153, 0.281)
+      rgba(83, 48, 240, 0.2) ,
+      rgba(11, 148, 153, 0.281) 
     );
-    @apply bg-gray-800;
-    /* background-color: rgba(81, 83, 255, 0.8); */
+    /* @apply  bg-gray-900;   */
+    /* @apply  bg-indigo-900;   */
+    outline: none;
+    background-color: rgb(33, 41, 52);
+    /* transition: 0.5s; */
   }
   .bg-stack-tag-1{
   
@@ -65,6 +68,10 @@
   .bg-glass{
     /* rgba(0,f,d,0.3); */
   }
+  .project-card{
+    transition: all 0.5s ease-in;
+  }
+ 
   .card-indigo{
     @apply bg-search-filter-option bg-indigo-900 border-indigo-500 border-2;
   }
@@ -208,12 +215,13 @@
   .sideMenu::-webkit-scrollbar {
     display: none;
   }
-  .bg-search-filter-option:hover{ 
+  /* .bg-search-filter-option:hover{ 
     @apply bg-indigo-900;  
     outline: none;
-   }
-   .active-filter:focus{ 
-    background: rgba(85, 209, 219, 0.8); 
+   } */
+   .active-filter{ 
+    background: rgba(85, 209, 219, 0.8) !important; 
+  
    }
   /* Hide scrollbar for IE, Edge add Firefox */
   .sideMenu{
@@ -233,11 +241,13 @@
   .w-28-percent{
     width: 28%;
   }
-
+.transition-0.5s{
+  transition: 0.5s ease;
+}
 
   @media screen and (min-width: 545px) {
-    .csm\:w-40-percent{
-      width: 45% ; /* custom small  */
+    .csm\:w-46-percent{
+      width: 46% ; /* custom small  */
     }
     .csm\:flex-row{
       @apply flex-row;
