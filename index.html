@@ -14,6 +14,21 @@
     <link rel="stylesheet" href="./output_css/tailwind.css" />
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
 
+    <!-- **********
+    *
+  ********************* -->
+
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<!-- <link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/> -->
+<link rel="stylesheet" href="github-graph.css">
+
     <title>MD.YEASIN ALI</title>
   </head>
   <body>
@@ -119,8 +134,34 @@
             </div>
           </div>
         </div>
+        
+      </section>
+     
+      <section class="section  my-work md:left-30-percent  md:relative md:w-8/12">
+        <div class="section-underline mt-7 mb-16 w-11/12"></div>
+        <div class="section-header relative mb-6">
+          <h2 class="section-title">Github Activity Graph</h2>
+        </div>  
+        <div class="calendar ">
+          <!-- Loading stuff -->
+          Loading the data just for you.
+      </div>
       </section>
     </div>
+    <script>
+      GitHubCalendar(".calendar", "yeasin49");
+  
+      // or enable responsive functionality:
+      // GitHubCalendar(".calendar", "yeasin49", { responsive: true });
+  
+      // Use a proxy
+      // GitHubCalendar(".calendar", "yeasin49", { responsive: true },{
+      //    proxy (yeasin49) {
+      //      return fetch(`https://your-proxy.com/github?user=${yeasin49}`)
+      //    }
+      // }).then(r => r.text())
+  </script>
     <script src="index.js"></script>
+
   </body>
 </html>
