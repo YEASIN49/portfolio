@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./output_css/tailwind.css" />
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
@@ -34,7 +34,7 @@
   <body>
     <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed overflow-y-auto">
       <div class="burperpng-container absolute z-50 top-0  h-12 w-16 flex flex-col justify-center items-center">
-        <div class="burgerpng md:hidden">
+        <div class="burgerpng sideMenu-shadow md:hidden">
           <!-- <span class="burgerpng"> -->
           <!-- <i id="hamburger" class="fas fa-bars"></i> -->
           <div class="line1"></div>
@@ -53,7 +53,7 @@
               /></a>
             </div>
             <div class="author-content mt-2 mb-16">
-              <h4 class="text-2xl md:text-profile-name ">MD.YEASIN ALI</h4>
+              <h4 class="text-2xl md:text-profile-name color-main-title">MD.YEASIN ALI</h4>
               <span class="italic text-profession">Web Developer</span>
               <div class="social-network mt-2">
                 <ul class="soial-icons">
@@ -62,14 +62,70 @@
                   <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-base fab fa-github "></i></a></li>
                 </ul>
               </div>
+              <!--  -->
+              <div class="skill-container hidden md:block my-11 pt-2 px-2">
+                <h3 class="text-base font-bold md:text-profile-name my-2">Skill Set</h3>
+                <div class="section-underline mt-0 mb-2 w-6/12 border-gray-700"></div>
+                <div class="skill-list">
+                  <span class="skill-title">Frontend </span>
+                  <br>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">HTML5</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">CSS3</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">JavaScript</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">Bootstrap</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">Tailwind.css</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">StyledComponents</span>
+                  <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">React.js</span>
+                  <br>
+                  <span class="skill-title mt-1">Backend</span> 
+                  <br>
+                  <span class="skill bg-search-filter-option color-dense-brown font-roboto tracking-wider leading-5 font-light text-xs">php</span> 
+                  <span class="skill bg-search-filter-option color-dense-brown font-roboto tracking-wider leading-5 font-light text-xs">MySql</span> 
+                  <br>
+                  <span class="skill-title mt-1">Others</span> 
+                  <br>
+                  <span class="skill bg-search-filter-option color-dense-brown font-roboto tracking-wider leading-5 font-light text-xs">Java</span>
+                  <span class="skill bg-search-filter-option color-dense-brown font-roboto tracking-wider leading-5 font-light text-xs">Blockchain</span>
+                </div>
+                <!--  -->
+                <!--  -->
+                <!-- <div class="resume-container">
+                  <div class="button-animation-container mx-auto my-10">
+                    <div class="button-container mx-auto bg-gray-900 relative bg-social-icon">
+                      <a href="http://">
+                        <button class="cv-button text-sm font-semibold mt-4 color-main-title">Download Resume</button><i class="fas fa-download"></i>
+                      </a>
+                      <div class="bar   top"></div>
+                      <div class="bar delay bottom"></div>
+                      <div class="bar left"></div>
+                      <div class="bar delay right"></div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <!--  -->
+              <div class="resume-container">
+                <div class="button-animation-container mx-auto my-10">
+                  <div class="button-container mx-auto bg-gray-900 relative bg-social-icon">
+                    <a href="http://">
+                      <button class="cv-button text-sm font-semibold mt-4 color-main-title">Download Resume</button><i class="fas fa-download"></i>
+                    </a>
+                    <div class="bar   top"></div>
+                    <div class="bar delay bottom"></div>
+                    <div class="bar left"></div>
+                    <div class="bar delay right"></div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
             </div>
           </div>
           <nav class="main-nav mb-8" role="navigation">
             <ul class="main-menu">
-              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section1">About Me</a></li>
-              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section3">My Work</a></li>
-              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900" href="#section2">What I’m good at</a></li>
-              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-b-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section4">Contact Me</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section-project">My Work</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section-about">More About Me</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900" href="#section-github">Github Activity</a></li>
+              <li><a class="block text-base leading-sidebar-nav font-bold border-t-2 border-b-2 border-solid transition-colors duration-500  hover:bg-blue-50 hover:text-gray-900 " href="#section-contact">Contact Me</a></li>
             </ul>
           </nav>
           <div class="copyright-text pb-6">
@@ -77,7 +133,7 @@
           </div>
         </div>
       </div>
-      <section class="section my-work md:left-30-percent  md:relative md:w-8/12">
+      <section id="section-project" class="section my-work md:left-30-percent  md:relative md:w-8/12">
         <div class="section-header relative">
           <h2 class="section-title">My Projects</h2>
         </div>  
@@ -87,58 +143,58 @@
           <button class="search-filter-option bg-search-filter-option" value="frontEnd" onclick="filter(event)">Frontend</button>
         </div>
         <div class="section-underline"></div>
-        <div class="project-wrapper w-full  mx-auto flex flex-col flex-wrap justify-between csm:flex-row md:flex-wrap lg:justify-start">
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-46-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0" value="fullStack">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+        <div class="project-wrapper w-95-percent  mx-auto flex flex-col flex-wrap justify-between csm:flex-row md:flex-wrap lg:justify-start">
+          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
             <div class="project-detail px-2 h-40 mt-2 mb-4">
               <h3 class="font-roboto font-bold font-22px">Test Title</h3>
               <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-46-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
             <div class="project-detail px-2 h-40 mt-2 mb-4">
               <h3 class="font-roboto font-bold font-22px">Test Title</h3>
               <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-46-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
             <div class="project-detail px-2 h-40 mt-2 mb-4">
               <h3 class="font-roboto font-bold font-22px">Test Title</h3>
               <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-46-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0" value="fullStack">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
             <div class="project-detail px-2 h-40 mt-2 mb-4">
               <h3 class="font-roboto font-bold font-22px">Test Title</h3>
               <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-3 w-11/12 csm:w-46-percent csm:mx-1 md:w-48-percent md:mx-1 lg:w-32-percent lg:mx-0" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/about-bg-1.jpg" alt="">
+          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
+            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
             <div class="project-detail px-2 h-40 mt-2 mb-4">
               <h3 class="font-roboto font-bold font-22px">Test Title</h3>
               <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-light "><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
+              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
             </div>
           </div>
         </div>
         
       </section>
      
-      <section class="section  my-work md:left-30-percent  md:relative md:w-8/12">
-        <div class="section-underline mt-7 mb-16 w-11/12"></div>
+      <section id="section-github" class="section  md:left-30-percent  md:relative md:w-8/12">
+        <div class="section-underline border-gray-700 mt-7 mb-16 w-11/12"></div>
         <div class="section-header relative mb-6">
           <h2 class="section-title">Github Activity Graph</h2>
         </div>  
@@ -147,7 +203,178 @@
           Loading the data just for you.
       </div>
       </section>
+      <!--  -->
+      <section id="section-skill" class="section px-2 md:hidden">
+        <div class="section-underline border-gray-700 mt-7 mb-16 w-11/12"></div>
+        <h3 class="text-xl font-bold  my-2">Skill Set</h3>
+        <div class="section-underline mt-0 mb-2 w-6/12 border-gray-700"></div>
+        <div class="skill-list">
+          <span class="skill-title">Frontend </span>
+          <br>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">HTML5</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">CSS3</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">JavaScript</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">Bootstrap</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">Tailwind.css</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">StyledComponents</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">React.js</span>
+          <br>
+          <span class="skill-title mt-1">Backend</span> 
+          <br>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">php</span> 
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">MySql</span> 
+          <br>
+          <span class="skill-title mt-1">Others</span> 
+          <br>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">Java</span>
+          <span class="skill bg-search-filter-option text-white font-roboto tracking-wider leading-5 font-light text-xs">Blockchain</span>
+        </div>
+        <!--  -->
+        <div class="resume-container">
+          <div class="button-animation-container mx-auto mt-6">
+            <div class="button-container mx-auto bg-gray-900 relative bg-social-icon">
+              <a href="http://">
+                <button class="cv-button text-sm font-semibold mt-4 color-main-title">Download Resume</button><i class="fas fa-download"></i>
+              </a>
+              <div class="bar   top"></div>
+              <div class="bar delay bottom"></div>
+              <div class="bar left"></div>
+              <div class="bar delay right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="section-about" class="section  md:left-30-percent  md:relative md:w-8/12">
+        <div class="section-underline border-gray-700 mt-5 mb-16 w-11/12"></div>
+        <div class="section-header relative">
+          <h2 class="section-title">Discover More</h2>
+        </div>
+        <div class="section-underline w-3/12 bg-gray-700"></div>
+          <div class="contact-content w-full flex">
+           <!--  -->
+            <!-- <div class="contact-form-container bg-social-icon pt-16 md:w-1/2 md:h-discover-section">
+              <p class="font-roboto font-bold text-xl mb-5 ">Ask Me Your Queries </p>
+              <form class="contact-form w-95-percent mx-auto pt-4 flex flex-col justify-center items-center" action="" method="post">
+                <div class="input-row w-full text-left mx-auto">
+                  <label class="input-label inline-block m-2" for="">Name</label>
+                  <input class="input-field mt-10" type="text" placeholder="Enter Your Name">
+                </div>
+                <div class="input-row w-full text-left mx-auto">
+                  <label class="input-label inline-block m-2" for="">Email</label>
+                  <input class="input-field" type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="input-row w-full text-left mx-auto">
+                  <label class="input-label inline-block m-2" for="">Mobile</label>
+                 <input class="input-field" type="tel" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="input-row w-full text-left mx-auto">
+                  <label class="input-label inline-block m-2" for="">Message</label>
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Queries !"></textarea> 
+                </div>
+                <input class="submit-button w-20 h-8 mt-5 mb-5 py-2" type="submit" value="Send">   
+              </form>
+              <div class="social-network mt-8">
+                <p class="font-roboto font-bold text-xl">Or Reach Me @</p>
+                <ul class="soial-icons my-3">
+                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
+                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="skype:live:.cce6d4cce9d75885?userinfo"><i class="text-base fab fa-skype"></i></a></li>
+                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="mailto:myeasin49@gmail.com"><i class="text-base far fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              <div class="mx-2">
+                <strong class="inline-block"><i class=" inline-block fas fa-map-marker-alt"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> 132/33 K.V. Power House, Wapda Road, West Rampura, Dhaka-1219</p>
+                <br>
+                <strong class="inline-block"><i class="call-icon my-2 inline-block text-sm fas fa-phone"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> +8801953974409</p>
+              </div>
+            </div> -->
+            <!--  -->
+            <div class="activity-container bg-social-icon pt-16 w-3/6 relative">
+              <h3 class="side-title font-extrabold text-xl px-2 md:text-2xl">M<br>O<br>R<br>E<br><br>A<br>C<br>T<br>I<br>V<br>I<br>T<br>Y<br></h3>
+            </div>
+            <!--  -->
+            <div class="activity-card relative h-full pb-16 bg-gray-900">
+              <p class="font-roboto pt-16 font-bold text-xl text-left mx-4">More About Me</p>
+              <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs">I am a freash graduate from department of Computer Science and Engineering, BRAC University. With over one year of personal learning phase of web development, I have built multiple personal web based projects. I also worked and built Blockchain application to diversify my current knowledge having a successful conference publication in data informatics. Looking forward to land into the web industry to compete myself by sharing and gaining skills and knowledge</p>
+             <!--  -->
+             <p class="font-roboto pt-6 font-bold text-xl text-left mx-4">Activity and Achievements</p>
+             <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs"> <i class="mx-1.5 fas fa-tags"></i>Certification on Bootstrap</p>
+             <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs"> <i class="mx-1.5 fas fa-tags"></i>Volunteer at Bangladesh National Caded Corps</p>
+               <!--  -->
+             <p class="font-roboto pt-6 font-bold text-xl text-left mx-4">Conference Publication</p>
+             <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs"> <i class="mx-1.5 fas fa-tags"></i><strong>Md.Yeasin Ali</strong>, Suhaib Ahmed, Muhammad Iqbal Hossain, A.B.M. Alim Al Islam, Jannatun Noor, <strong>  "Electronic Health Record's Security and Access Control Using Blockchain and IPFS"</strong>, 7th International Congress on Information and Communication Technology(ICICT2022), London, United Kingdom(Accepted and Pending for Release)</p>
+            <!--  -->
+            <p class="font-roboto pt-6 font-bold text-xl text-left mx-4">Poster</p>
+            <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs"> <i class="mx-1.5 fas fa-tags"></i><strong>Md.Yeasin Ali</strong>, Suhaib Ahmed, Muhammad Iqbal Hossain, A.B.M. Alim Al Islam, Jannatun Noor, <strong>  "Electronic Health Record's Security and Access Control Using Blockchain and IPFS"</strong>, Selected for oral presentation in </p>
+           
+
+             <!-- <div class="social-network mt-2">
+                <ul class="soial-icons flex h-52 justify-center items-center">
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-linkedin-in"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="https://github.com/YEASIN49"><i class="text-base fab fa-github "></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="skype:live:.cce6d4cce9d75885?userinfo"><i class="text-base fab fa-skype"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="mailto:myeasin49@gmail.com"><i class="text-base far fa-envelope"></i></a></li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+      </section>
+      <!--  -->
+      <section id="section-contact" class="section mb-1  my-work md:left-30-percent  md:relative md:w-8/12">
+        <div class="section-underline border-gray-700 mt-7 mb-16 w-11/12"></div>
+        <div class="section-header relative">
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="section-underline w-3/12 bg-gray-700"></div>
+          <div class="contact-content w-full">
+           <!--  -->
+            <div class="contact-form-container bg-search-filter-option hover:bg-gray-900 w-full mx-auto rounded-2xl pt-8">
+              <p class="font-roboto font-bold text-lg mb-5 ">Ask Me Your Queries </p>
+              <form class="contact-form w-95-percent mx-auto " action="" method="post">
+                <div class="flex-container md:flex">
+                  <div class="form-col flex-col justify-center items-center md:w-7/12 md:pr-1 lg:w-5/12">
+                    <div class="input-row w-full text-left mx-auto">
+                      <input class="input-field" type="text" placeholder="Enter Your Name">
+                   </div>
+                    <div class="input-row w-full text-left mx-auto">
+                      <input class="input-field" type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="input-row w-full text-left mx-auto">
+                    <input class="input-field" type="tel" placeholder="Enter Your Mobile Number">
+                    </div>
+                  </div>
+                  <div class="form-col flex-col justify-center items-center md:w-5/12 md:pl-1 lg:w-7/12">
+                    <div class="input-row w-full text-left mx-auto">
+                      <textarea name="" id="" cols="10" rows="6" placeholder="Write Your Queries !"></textarea> 
+                    </div>
+                  </div>
+                </div>
+                <input class="submit-button w-20 h-8 mt-2 mb-7 py-2" type="submit" value="Send">   
+              </form>
+            </div>
+            <!--  -->
+            <div class="contact-detail">
+              <div class="social-network mt-14">
+                <p class="font-roboto font-bold text-xl">Also Reach Me </p>
+                <ul class="soial-icons my-3">
+                  <li class="inline-block"><a class="bg-social-icon block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon block text-center text-xs w-9 h-9 mx-0 leading-9" href="skype:live:.cce6d4cce9d75885?userinfo"><i class="text-base fab fa-skype"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon block text-center text-xs w-9 h-9 mx-0 leading-9" href="mailto:myeasin49@gmail.com"><i class="text-base far fa-envelope"></i></a></li>
+                </ul>
+              </div>
+              <div class="mx-2">
+                <strong class="inline-block"><i class=" inline-block fas fa-map-marker-alt"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> 132/33 K.V. Power House, Wapda Road, West Rampura, Dhaka-1219</p>
+                <br>
+                <strong class="inline-block"><i class="call-icon my-2 inline-block text-sm fas fa-phone"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> +8801953974409</p>
+              </div>
+            </div>
+            <p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline-block mt-12"> &copy; MD.YEASIN ALI</p>
+          </section>
+      <!--  -->
+     
     </div>
+    
     <script>
       GitHubCalendar(".calendar", "yeasin49");
   

@@ -1,9 +1,9 @@
 :root {
-    --color-calendar-graph-day-bg: #dddbdb;
-    --color-calendar-graph-day-L1-bg: #39dd34;
-    --color-calendar-graph-day-L2-bg: #45a045;
-    --color-calendar-graph-day-L3-bg: #047526;
-    --color-calendar-graph-day-L4-bg: #0a4208;
+    --color-calendar-graph-day-bg: #3d4350bf;
+    --color-calendar-graph-day-L1-bg: #4faa4f;
+    --color-calendar-graph-day-L2-bg: #0a7028;
+    --color-calendar-graph-day-L3-bg: #0a4208;
+    --color-calendar-graph-day-L4-bg: #0a3807;
   }
   
   rect.ContributionCalendar-day[data-level='0'] {
@@ -55,7 +55,8 @@
     margin: 0 0 15px 80%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -2%;
+    font-size: 13.5px;
   }
   @media screen and (max-width: 1270px) {  /* custom */
     .js-calendar-graph img{
@@ -73,6 +74,7 @@
       min-height: 243px;
       text-align: center;
       margin: 0 auto;
+      max-width: 880px;
   }
   
   .calendar-graph text.wday,
@@ -228,3 +230,204 @@
       fill: #ccc;
       font-size: 11px;
   }
+
+
+  /************************
+  *
+  *
+  *
+  *
+  **********************  */
+  
+  /* .skill-title{
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 16px;
+      color: #6783a9;
+      border-bottom: 1px solid rgb(55 65 81);
+      margin-bottom: 8px;
+      padding: 5px 0;
+      width: 33%;
+  } */
+  /* .skill{
+      display: inline-block;
+      margin: 3px 1px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      outline: rgb(22, 22, 59) solid 1px;
+  } */
+  /* .contact-card,.activity-card, .color-dense-brown{
+    color: #ffdbdb9e;
+  } */
+  /* .pageWrapper{
+    color: #ffdbdb9e;
+  } */
+  .contact-form-container{
+    /* background-color: #9ad3bc; */
+  }
+  .contact-form{
+      /* box-sizing: border-box; */
+  }
+  /* .input-field{
+    line-height: 35px;
+    padding: 5px 0 5px 15px;
+    width: 100%;
+    margin: 5px 0;
+    color: rgba(204, 204, 204, 0.85);
+    background-color: rgb(17 7 74 / 13%);
+  } */
+  .input-label{
+      /* margin: 6px; */
+  }
+  /* .contact-form textarea{
+    margin: 5px 0 15px 0;
+    padding: 5px 0 5px 15px;
+    width: 100%;
+     background-color: rgb(17 7 74 / 13%); 
+  } */
+  /* .submit-button{
+      padding: 5px 15px;
+      background-color: rgb(17 17 60 / 80%);
+      border-radius: 15px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+  } */
+  /* .leading-16{
+      line-height: 56px;
+  } */
+  .button-animation-container{
+    overflow: hidden;
+    scroll-behavior: smooth !important;
+    padding-top: 4px;
+    width: 108px;
+    height: 108px;
+    background-color: rgb(22, 22, 59);
+    cursor: pointer;
+  
+  }
+  .button-container{
+      width: 100px;
+      height: 100px;
+    
+      /* background-color: green; */
+  }
+  .bar{
+      position: absolute;
+      width: 30px;
+      height: 5px;
+      background-color: lightblue;
+       transition: all 0.6s ease;
+      -webkit-animation-duration: 1.2s;
+       animation-duration: 1.2s;
+        /* -webkit-animation-fill-mode: both;
+         animation-fill-mode: both; */
+        -webkit-animation-iteration-count: infinite;
+         animation-iteration-count: infinite; 
+  }
+  .bar.delay {
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+  }
+  .top{
+    top: -5px;
+    left: -4px;
+    /* background-color: green; */
+  }
+  .bottom{
+    bottom: -5px;
+    right: -4px;
+    /* background-color: yellow; */
+  }
+  .left{
+    transform: rotate(90deg);
+    bottom: 4px;
+    left: -17px;
+    /* background-color: blue; */
+  }
+  .right{
+    transform: rotate(90deg);
+    top: 4px;
+    right: -17px;
+    /* background-color: indianred; */
+  }
+  @-webkit-keyframes h-move {
+    0% {
+        left: -12px;
+    }
+    100% {
+        left: 120px;
+    }
+  }
+  @-webkit-keyframes h-move-reverse {
+    0% {
+        right: -12px;
+    }
+    100% {
+        right: 130px;
+    }
+  }
+  /* @-webkit-keyframes h-move {
+    0% {
+      right: -12px;
+    }
+    100% {
+      right: 120px;
+    }
+  } */
+  /* @-webkit-keyframes v-move {
+    0% {
+      top: -0.5rem;
+    }
+    100% {
+      top: 22.8rem;
+    }
+  } */
+  @keyframes v-move {
+    0% {
+      top: -0.4px;
+    }
+    100% {
+      top: 130px;
+    }
+  }
+  @keyframes v-move-reverse {
+    0% {
+        bottom: -0.4px;
+      }
+      100% {
+        bottom: 130px;
+      }
+    }
+  .right ,
+  .left {
+    animation-name: v-move;
+  }
+  .top,
+.bottom {
+  animation-name: h-move;
+}
+  
+.call-icon{
+  transform: rotateZ(100deg);
+}
+.side-title{
+  /* position: absolute; */
+/* transform: rotateZ(-90deg); */
+min-width: 40px;
+color: #7fffd44a;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 13.5px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size: 13.5px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-size: 13.5px;
+}
+.color-main-title{
+  color: #bfbebe;
+}
