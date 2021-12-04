@@ -10,8 +10,11 @@
       rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./output_css/tailwind.css" />
+    <!-- <link rel="stylesheet" href="./output_css/tailwind.css" /> -->
+    <link rel="stylesheet" href="./prod_css/style.css" />
+    <link rel="stylesheet" href="./github-graph.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
 
     <!-- **********
@@ -27,20 +30,18 @@
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 /> -->
-<link rel="stylesheet" href="github-graph.css">
+
 
     <title>MD.YEASIN ALI</title>
   </head>
   <body>
-    <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed overflow-y-auto">
+    <!-- <div id="pageWrapper" class="w-full h-screen bg-parallex-img bg-cover bg-no-repeat bg-fixed overflow-y-auto"> -->
+    <div id="pageWrapper" class="page-wrapper h-screen bg-parallex-img bg-cover bg-fixed overflow-y-auto">
       <div class="burperpng-container absolute z-50 top-0  h-12 w-16 flex flex-col justify-center items-center">
         <div class="burgerpng sideMenu-shadow md:hidden">
-          <!-- <span class="burgerpng"> -->
-          <!-- <i id="hamburger" class="fas fa-bars"></i> -->
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
-          <!-- </span> -->
         </div>
       </div>
          
@@ -57,16 +58,16 @@
               <span class="italic text-profession">Web Developer</span>
               <div class="social-network mt-2">
                 <ul class="soial-icons">
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-linkedin-in"></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-base fab fa-github "></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" target="_blank" href="https://codepen.io/Yeasin49/pens/public"><i class="text-sm fab fa-codepen"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" target="_blank" href="#"><i class="text-sm fab fa-linkedin-in"></i></a></li>
+                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" target="_blank" href="https://github.com/YEASIN49"><i class="text-base fab fa-github "></i></a></li>
                 </ul>
               </div>
               <!--  -->
               <div class="skill-container hidden md:block my-11 pt-2 px-2">
                 <h3 class="text-base font-bold md:text-profile-name my-2">Skill Set</h3>
                 <div class="section-underline mt-0 mb-2 w-6/12 border-gray-700"></div>
-                <div class="skill-list px-2">
+                <div class="skill-list mx-1">
                   <span class="skill-title">Frontend </span>
                   <br>
                   <span class="skill bg-search-filter-option text-white  font-roboto tracking-wider leading-5 font-light text-xs">HTML5</span>
@@ -88,20 +89,6 @@
                   <span class="skill bg-search-filter-option color-dense-brown font-roboto tracking-wider leading-5 font-light text-xs">Blockchain</span>
                 </div>
                 <!--  -->
-                <!--  -->
-                <!-- <div class="resume-container">
-                  <div class="button-animation-container mx-auto my-10">
-                    <div class="button-container mx-auto bg-gray-900 relative bg-social-icon">
-                      <a href="http://">
-                        <button class="cv-button text-sm font-semibold mt-4 color-main-title">Download Resume</button><i class="fas fa-download"></i>
-                      </a>
-                      <div class="bar   top"></div>
-                      <div class="bar delay bottom"></div>
-                      <div class="bar left"></div>
-                      <div class="bar delay right"></div>
-                    </div>
-                  </div>
-                </div> -->
               </div>
               <!--  -->
               <div class="resume-container">
@@ -110,7 +97,7 @@
                     <a href="http://">
                       <button class="cv-button text-sm font-semibold mt-4 color-main-title">Download Resume</button><i class="fas fa-download"></i>
                     </a>
-                    <div class="bar   top"></div>
+                    <div class="bar top"></div>
                     <div class="bar delay bottom"></div>
                     <div class="bar left"></div>
                     <div class="bar delay right"></div>
@@ -143,50 +130,91 @@
           <button class="search-filter-option bg-search-filter-option" value="frontEnd" onclick="filter(event)">Frontend</button>
         </div>
         <div class="section-underline"></div>
-        <div class="project-wrapper w-95-percent  mx-auto flex flex-col flex-wrap justify-between csm:flex-row md:flex-wrap lg:justify-start">
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
-            <div class="project-detail px-2 h-40 mt-2 mb-4">
-              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
-              <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+        <div class="project-wrapper w-95-percent transition-1\2s  mx-auto flex flex-col flex-wrap justify-between csm:flex-row md:flex-wrap lg:justify-start">
+          <div class="project-card overflow-hidden relative hidden transition-1\2s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
+            <div class="image-container">
+              <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/kajchai.jpg" alt="">
+              
+            </div>
+            <div class="project-detail pb-16 px-2 mt-2 mb-6 color-card md:pb-4 md:mb-0">
+              <h3 class="font-roboto font-bold font-22px">KAJCHAI</h3>
+              <p class="font-poppins text-profession font-light letter-spacing-1by2px mt-1 mb-4 px-5">A role-based online job portal. </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession font-medium mb-4 pb-0 md:pb-9"> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> HTML</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> CSS</span>  <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> Javascript</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> php</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> MySql</span>  </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession flex justify-center"><span class=" md:absolute md:bottom-4 bg-stack-tag-2 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+            </div>
+            <div class="absolute bottom-0  w-full project-showcase py-3 md:flex md:flex-col bg-gray-900 md:bg-transparent md:h-2/6 md:top-2.5 md:left-2.5  md:rounded-lg md:bg-card-hover-button">
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2  md:w-10 md:h-10 md:leading-9 md:my-2" href="https://github.com/YEASIN49/kajchai" target="_blank" rel="noopener noreferrer"><i class="font-18px align-middle md:text-white md:text-base fab fa-github "></i></a>
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2 md:w-10 md:h-10 md:leading-9 " href="https://kajchai.000webhostapp.com" target="_blank" rel="noopener noreferrer"><i class="text-base align-middle md:text-white fas fa-external-link-alt"></i></a>
+              
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
-            <div class="project-detail px-2 h-40 mt-2 mb-4">
-              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
-              <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+          <div class="project-card overflow-hidden relative hidden transition-1\2s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
+            <div class="image-container">
+              <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/fixthewheel.jpg" alt="">
+              
+            </div>
+            <div class="project-detail pb-16 px-2 mt-2 mb-6 color-card md:pb-4 md:mb-0">
+              <h3 class="font-roboto font-bold font-22px">FIX THE WHEEL</h3>
+              <p class="font-poppins text-profession font-light letter-spacing-1by2px mt-1 mb-4 px-5">Online vehicle mechanic booking service. </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession font-medium mb-4 pb-0 md:pb-9"> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> HTML</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> CSS</span>  <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> Javascript</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> php</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> MySql</span>  </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession flex justify-center"><span class=" md:absolute md:bottom-4 bg-stack-tag-2 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+            </div>
+            <div class="absolute bottom-0 w-full project-showcase py-3 md:flex md:flex-col bg-gray-900 md:bg-transparent md:h-2/6 md:top-2.5 md:left-2.5  md:rounded-lg md:bg-card-hover-button">
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2  md:w-10 md:h-10 md:leading-9 md:my-2" href="https://github.com/YEASIN49/FixMyWheel" target="_blank" rel="noopener noreferrer"><i class="font-18px align-middle md:text-white md:text-base fab fa-github "></i></a>
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2 md:w-10 md:h-10 md:leading-9 " href="https://fixthewheel.000webhostapp.com" target="_blank" rel="noopener noreferrer"><i class="text-base align-middle md:text-white fas fa-external-link-alt"></i></a>
+              
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
-            <div class="project-detail px-2 h-40 mt-2 mb-4">
-              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
-              <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+          <div class="project-card overflow-hidden relative hidden transition-1\2s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
+            <div class="image-container">
+              <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/restrox.jpg" alt="">
+              
+            </div>
+            <div class="project-detail pb-16 px-2 mt-2 mb-6 color-card md:pb-4 md:mb-0">
+              <h3 class="font-roboto font-bold font-22px">CHEF X</h3>
+              <p class="font-poppins text-profession font-light letter-spacing-1by2px mt-1 mb-4 px-5">Restaurant management system (Backend under development)</p>
+              <p class="font-roboto letter-spacing-1by2px text-profession font-medium mb-4 pb-0 md:pb-9"> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> HTML</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> CSS</span>  <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> Javascript</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> php</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> MySql</span>  </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession flex justify-center"><span class="md:absolute md:bottom-4 bg-stack-tag-2 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+            </div>
+            <div class="absolute bottom-0  w-full project-showcase py-3 md:flex md:flex-col bg-gray-900 md:bg-transparent md:h-2/6 md:top-2.5 md:left-2.5  md:rounded-lg md:bg-card-hover-button">
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2  md:w-10 md:h-10 md:leading-9 md:my-2" href="https://github.com/YEASIN49/RestroX" target="_blank" rel="noopener noreferrer"><i class="font-18px align-middle md:text-white md:text-base fab fa-github "></i></a>
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2 md:w-10 md:h-10 md:leading-9 " href="https://fixthewheel.000webhostapp.com/project2/index.php" target="_blank" rel="noopener noreferrer"><i class="text-base align-middle md:text-white fas fa-external-link-alt"></i></a>
+              
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="fullStack">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
-            <div class="project-detail px-2 h-40 mt-2 mb-4">
-              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
-              <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Full Stack</span></p>
+          <div class="project-card overflow-hidden relative hidden transition-1\2s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
+            <div class="image-container">
+              <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/sweethome.jpg" alt="">
+              
+            </div>
+            <div class="project-detail pb-16 px-2 mt-2 mb-6 color-card md:pb-4 md:mb-0">
+              <h3 class="font-roboto font-bold font-22px">SWEET HOME</h3>
+              <p class="font-poppins text-profession font-light letter-spacing-1by2px mt-1 mb-4 px-5">Real Estate and Consultency</p>
+              <p class="font-roboto letter-spacing-1by2px text-profession font-medium mb-4 pb-0 md:pb-9"> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> Styled Components</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> React.js</span>  </p>
+              <p class="font-roboto letter-spacing-1by2px text-profession flex justify-center"><span class="md:absolute md:bottom-4 bg-stack-tag-2 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+            </div>
+            <div class="absolute bottom-0  w-full project-showcase py-3 md:flex md:flex-col bg-gray-900 md:bg-transparent md:h-2/6 md:top-2.5 md:left-2.5  md:rounded-lg md:bg-card-hover-button">
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2  md:w-10 md:h-10 md:leading-9 md:my-2" href="https://github.com/YEASIN49/Sweet-Home" target="_blank" rel="noopener noreferrer"><i class="font-18px align-middle md:text-white md:text-base fab fa-github "></i></a>
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2 md:w-10 md:h-10 md:leading-9 " href="https://optimistic-mestorf-501c83.netlify.app" target="_blank" rel="noopener noreferrer"><i class="text-base align-middle md:text-white fas fa-external-link-alt"></i></a>
+              
             </div>
           </div>
-          <div class="project-card hidden transition-0.5s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
-            <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/t1.jpeg" alt="">
-            <div class="project-detail px-2 h-40 mt-2 mb-4">
-              <h3 class="font-roboto font-bold font-22px">Test Title</h3>
-              <p class="font-roboto text-sm font-light letter-spacing-0.5px mt-1 mb-3">Test Title is an online job platform</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript<i class="mx-1.5 fas fa-tags"></i>PHP<i class="mx-1.5 fas fa-tags"></i>MySql</p>
-              <p class="font-roboto letter-spacing-0.5px text-profession"><span class="bg-stack-tag-1 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+          <div class="project-card overflow-hidden relative hidden transition-1\2s bg-glass sideMenu-shadow  rounded-lg  mx-auto my-1 w-98-percent csm:w-49-percent csm:mx-0 md:w-47-percent md:mx-1 md:my-2 lg:w-31-percent" value="frontEnd">
+            <div class="image-container">
+              <img class="block w-11/12 max-w-md mx-auto mt-3 rounded-lg" src="images/codepen.jpg" alt="">
+              
+            </div>
+            <div class="project-detail pb-16 px-2 mt-2 mb-6 color-card md:pb-4 md:mb-0">
+              <h3 class="font-roboto font-bold font-22px">CODEPEN</h3>
+              <p class="font-poppins text-profession font-light letter-spacing-1by2px mt-1 mb-4 px-5">Some reuseable UI components </p>
+              <!-- <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4 pb-0 md:pb-9"> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> HTML</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> CSS</span>  <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> Javascript</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> php</span> <span class="bg-social-icon-hoverless inline-block py-1 px-3 rounded-md mb-1"> MySql</span>  </p> -->
+              <!-- <p class="font-roboto letter-spacing-0.5px text-profession font-medium mb-4 pb-0 md:pb-9"><i class="fas fa-tags mx-1.5"></i> HTML <i class="mx-1.5 fas fa-tags"></i>CSS <i class="mx-1.5 fas fa-tags"></i> Javascript</p> -->
+              <p class="font-roboto letter-spacing-1by2px text-profession flex justify-center"><span class=" md:absolute md:bottom-4 bg-stack-tag-2 px-4 font-bold tracking-wider py-2 rounded-full">Frontend</span></p>
+            </div>
+            <div class="absolute bottom-0  w-full project-showcase py-3 md:flex md:flex-col bg-gray-900 md:bg-transparent md:h-2/6 md:top-2.5 md:left-2.5  md:rounded-lg md:bg-card-hover-button">
+              <!-- <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2  md:w-10 md:h-10 md:leading-9 md:my-2" href="https://github.com/YEASIN49/kajchai" target="_blank" rel="noopener noreferrer"><i class="font-18px align-middle md:text-white md:text-base fab fa-github "></i></a> -->
+              <a class="bg-social-icon inline-block text-center rounded-full md:bg-gray-900 text-xs w-11 h-11 leading-8 mx-2 md:w-10 md:h-10 md:leading-9 " href="https://codepen.io/Yeasin49/pens/public" target="_blank" rel="noopener noreferrer"><i class="text-base align-middle md:text-white fas fa-external-link-alt"></i></a>
+              
             </div>
           </div>
         </div>
@@ -253,41 +281,7 @@
         <div class="section-underline w-3/12 bg-gray-700"></div>
           <div class="contact-content w-full flex">
            <!--  -->
-            <!-- <div class="contact-form-container bg-social-icon pt-16 md:w-1/2 md:h-discover-section">
-              <p class="font-roboto font-bold text-xl mb-5 ">Ask Me Your Queries </p>
-              <form class="contact-form w-95-percent mx-auto pt-4 flex flex-col justify-center items-center" action="" method="post">
-                <div class="input-row w-full text-left mx-auto">
-                  <label class="input-label inline-block m-2" for="">Name</label>
-                  <input class="input-field mt-10" type="text" placeholder="Enter Your Name">
-                </div>
-                <div class="input-row w-full text-left mx-auto">
-                  <label class="input-label inline-block m-2" for="">Email</label>
-                  <input class="input-field" type="email" placeholder="Enter Your Email">
-                </div>
-                <div class="input-row w-full text-left mx-auto">
-                  <label class="input-label inline-block m-2" for="">Mobile</label>
-                 <input class="input-field" type="tel" placeholder="Enter Your Mobile Number">
-                </div>
-                <div class="input-row w-full text-left mx-auto">
-                  <label class="input-label inline-block m-2" for="">Message</label>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Queries !"></textarea> 
-                </div>
-                <input class="submit-button w-20 h-8 mt-5 mb-5 py-2" type="submit" value="Send">   
-              </form>
-              <div class="social-network mt-8">
-                <p class="font-roboto font-bold text-xl">Or Reach Me @</p>
-                <ul class="soial-icons my-3">
-                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
-                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="skype:live:.cce6d4cce9d75885?userinfo"><i class="text-base fab fa-skype"></i></a></li>
-                  <li class="inline-block"><a class="bg-search-filter-option block text-center text-xs w-9 h-9 mx-0 leading-9" href="mailto:myeasin49@gmail.com"><i class="text-base far fa-envelope"></i></a></li>
-                </ul>
-              </div>
-              <div class="mx-2">
-                <strong class="inline-block"><i class=" inline-block fas fa-map-marker-alt"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> 132/33 K.V. Power House, Wapda Road, West Rampura, Dhaka-1219</p>
-                <br>
-                <strong class="inline-block"><i class="call-icon my-2 inline-block text-sm fas fa-phone"></i></strong><p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline"> +8801953974409</p>
-              </div>
-            </div> -->
+           
             <!--  -->
             <div class="activity-container bg-social-icon pt-16 w-3/6 relative">
               <h3 class="side-title font-extrabold text-xl px-2 md:text-2xl">M<br>O<br>R<br>E<br><br>A<br>C<br>T<br>I<br>V<br>I<br>T<br>Y<br></h3>
@@ -307,16 +301,8 @@
             <p class="font-roboto pt-6 font-bold text-xl text-left mx-4">Poster</p>
             <p class="font-roboto  tracking-wider px-4 py-2 leading-5 font-light text-left text-xs"> <i class="mx-1.5 fas fa-tags"></i><strong>Md.Yeasin Ali</strong>, Suhaib Ahmed, Muhammad Iqbal Hossain, A.B.M. Alim Al Islam, Jannatun Noor, <strong>  "Electronic Health Record's Security and Access Control Using Blockchain and IPFS"</strong>, Selected for oral presentation in </p>
            
-
-             <!-- <div class="social-network mt-2">
-                <ul class="soial-icons flex h-52 justify-center items-center">
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-facebook-f"></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="#"><i class="text-sm fab fa-linkedin-in"></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="https://github.com/YEASIN49"><i class="text-base fab fa-github "></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="skype:live:.cce6d4cce9d75885?userinfo"><i class="text-base fab fa-skype"></i></a></li>
-                  <li class="inline-block"><a class="bg-social-icon inline-block text-center text-xs w-9 h-9 mx-0 leading-9" href="mailto:myeasin49@gmail.com"><i class="text-base far fa-envelope"></i></a></li>
-                </ul>
-              </div> -->
+            <!--  -->
+           
             </div>
           </div>
       </section>
@@ -329,7 +315,7 @@
         <div class="section-underline w-3/12 bg-gray-700"></div>
           <div class="contact-content w-full">
            <!--  -->
-            <div class="contact-form-container bg-search-filter-option hover:bg-gray-900 w-full mx-auto rounded-2xl pt-8">
+            <div class="contact-form-container bg-search-filter-option  hover:bg-gray-900 w-98-percent mx-auto rounded-2xl pt-8">
               <p class="font-roboto font-bold text-lg mb-5 ">Ask Me Your Queries </p>
               <form class="contact-form w-95-percent mx-auto " action="" method="post">
                 <div class="flex-container md:flex">
@@ -350,7 +336,7 @@
                     </div>
                   </div>
                 </div>
-                <input class="submit-button w-20 h-8 mt-2 mb-7 py-2" type="submit" value="Send">   
+                <input class="submit-button w-20 h-8 mt-2 mb-7 py-2 cursor-pointer" type="submit" value="Send">   
               </form>
             </div>
             <!--  -->
@@ -370,6 +356,7 @@
               </div>
             </div>
             <p class="font-roboto tracking-wider pl-1 pr-2 py-2 leading-5 font-light text-center text-xs inline-block mt-12"> &copy; MD.YEASIN ALI</p>
+          </div>
           </section>
       <!--  -->
      
