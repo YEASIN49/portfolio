@@ -142,6 +142,11 @@ rect.ContributionCalendar-day[data-level='4'] {
     display: block;
     color: white; /* custom */
 }
+@media screen and (max-width: 768px)  {   /* custom */
+    .contrib-number {  
+        font-weight: 500;
+    }
+}
 
 .calendar img.spinner {
     width: 70px;
