@@ -478,7 +478,7 @@ transform: rotateZ(100deg);
 }
 .contact-card,.activity-card, .color-dense-brown{
   /* color: #ffdbdb9e; */
-  color: #ebbcbc9e;
+  color: #e3c1a79e;
 }
   @media screen and (min-width: 545px) {
     .csm\:w-49-percent{

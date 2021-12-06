@@ -142,9 +142,9 @@ rect.ContributionCalendar-day[data-level='4'] {
     display: block;
     color: white; /* custom */
 }
-@media screen and (max-width: 768px)  {   /* custom */
+@media screen and (max-width: 768px)  {   /*  */
     .contrib-number {  
-        font-weight: 500;
+        font-weight: 300;
     }
 }
 
